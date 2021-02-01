@@ -14,12 +14,12 @@ const routes = [
     component: () => import('@/views/login/')
   },
   {
-    path: "/",
+    path: "/home",
     name: "Layout",
     component: () => import('@/views/layout/'),
     children: [
       {
-        path: "/",
+        path: "/home",
         name: "Home",
         component: () => import('@/views/home/')
       },
